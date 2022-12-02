@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'buy_together_app.apps.BuytogetherappConfig',
+    'product.apps.ProductConfig',
+    'supplier.apps.SupplierConfig',
 ]
 
 MIDDLEWARE = [
