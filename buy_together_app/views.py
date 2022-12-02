@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 
-def main_page(request):
+def index(request):
     return render(request, 'buy_together_app/main.html')

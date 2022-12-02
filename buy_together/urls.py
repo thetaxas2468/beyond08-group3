@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from buy_together_app import views
+from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.main_page, name='Main_Page')
-]
+    path('', views.index, name='supplierProduct'),
+    path('supplierProduct/', include('buy_together_app.supplierProduct_url.py'))]
